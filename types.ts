@@ -135,12 +135,7 @@ class LinkedList {
         }
         else{
             let currentnode = this.head;
-            if(item == currentnode.value){
-                currentnode = currentnode.next;
-            }
-            else{
-                currentnode = currentnode.next;
-            }
+
         }
     }
 }
@@ -151,4 +146,11 @@ ll.add(8);
 ll.add("rrrrr");
 ll.deleteItem(8);
 var y = ll.showItems();
+
+for(var i = 0; i < arr.length; i++){
+    if(arr[i] === value){
+        arr[i -1].next = arr[i +1]
+    }
+
+}
 
